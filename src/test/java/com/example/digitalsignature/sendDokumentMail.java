@@ -1,3 +1,4 @@
+package com.example.digitalsignature;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -8,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import static org.mockito.Mockito.*;
 
-public class ControllerTest {
+public class sendDokumentMail {
 
     @InjectMocks
     private Controller controller;
