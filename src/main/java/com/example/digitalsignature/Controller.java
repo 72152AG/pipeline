@@ -25,10 +25,13 @@ public class Controller {
     }
 
     @PostMapping(value = "/send")
-    public ModelAndView send(Model model, @RequestParam("files")MultipartFile[] files, @RequestParam String email){
+    public ModelAndView send(Model model, @RequestParam("files") MultipartFile[] files, @RequestParam String email){
         ModelAndView modelAndView = new ModelAndView();
-        service.sendDokumentMail(files,email);
+        if (files.length > 0) {
+            service.sendDokumentMail(files,email);
+        }
         modelAndView.setViewName("Send");
         return modelAndView;
     }
+
 }

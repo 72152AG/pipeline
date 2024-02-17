@@ -1,22 +1,24 @@
 package com.example.digitalsignature;
 
 import static org.mockito.Mockito.*;
-
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockitoAnnotations;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
 
 public class ControllerUnitTest {
-
+    @Mock
     private ServiceImpl service;
+    @InjectMocks
     private Controller controller;
 
     @BeforeEach
     public void setUp() {
-        service = mock(ServiceImpl.class);
-        controller = new Controller(service);
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
