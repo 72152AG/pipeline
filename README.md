@@ -1,3 +1,4 @@
-![Build](https://github.com/DarkoGNU/family-cash-card/actions/workflows/gradle.yml/badge.svg)
-![SAST](https://github.com/DarkoGNU/family-cash-card/actions/workflows/codeql.yml/badge.svg)
-![DAST](https://github.com/DarkoGNU/family-cash-card/actions/workflows/stackhawk.yml/badge.svg)
+![MAVEN](https://github.com/72152AG/pipeline/actions/workflows/maven.yml/badge.svg)
+![StackHawk](https://github.com/72152AG/pipeline/actions/workflows/stackhawk.yml/badge.svg)
+
+
