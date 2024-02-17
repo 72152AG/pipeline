@@ -6,7 +6,7 @@ try{
     stage('Clone Repo') {
         // for display purposes
         // Get some code from a GitHub repository
-        git url: 'https://github.com/dadzio008/HomeAutomaticationAccountsManagement.git',
+        git url: 'https://github.com/72152AG/pipeline',
             credentialsId: '8dc1d2e4-1e36-46d6-b5d5-e40ef097a391',
             branch: 'develop'
     }
